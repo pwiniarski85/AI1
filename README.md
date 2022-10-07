@@ -16,5 +16,5 @@ Use Symfony Framework or Laravel instead.
 1. Copy `config/config.dist.php` to `config/config.php` and update your settings.
 2. Compile LESS styles into minified CSS: 
 ```
-$ProjectFileDir$\public\assets\src\less\style.less $ProjectFileDir$\public\assets\dist\style.min.css --clean-css --source-map
+lessc $ProjectFileDir$\public\assets\src\less\style.less $ProjectFileDir$\public\assets\dist\style.min.css --clean-css --source-map
 ```
