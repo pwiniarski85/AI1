@@ -4,5 +4,5 @@ CREATE TABLE `post`
     `subject` VARCHAR(255) NOT NULL,
     `content` TEXT         NOT NULL,
     PRIMARY KEY (`id`)
-) COLLATE='utf8mb4_polish_ci'
+) COLLATE='utf8_polish_ci'
 ;
