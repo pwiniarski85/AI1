@@ -4,17 +4,12 @@
 /** @var \App\Service\Router $router */
 
 $title = 'Create Post';
+$bodyClass = "edit";
 
 ob_start(); ?>
     <h1>Create Post</h1>
-    <form action="<?= $router->generatePath('post-create') ?>" method="post">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="post[subject]" value="<?= $post ? $post->getSubject() : '' ?>">
-
-        <label for="content">Content</label>
-        <textarea id="content" name="post[content]"><?= $post? $post->getContent() : '' ?></textarea>
-
-        <input type="submit" value="Submit">
+    <form action="<?= $router->generatePath('post-create') ?>" method="post" class="edit-form">
+        <?php require __DIR__ . DIRECTORY_SEPARATOR . '_form.html.php'; ?>
         <input type="hidden" name="action" value="post-create">
     </form>
 

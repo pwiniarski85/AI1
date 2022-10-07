@@ -3,14 +3,14 @@ namespace App\Service;
 
 class Router
 {
-    public function generatePath(string $action, ?array $params = [], $includeFC = true): string
+    public function generatePath(string $action, ?array $params = []): string
     {
-        $query = http_build_query(array_merge(['action' => $action], $params));
-        $path = $includeFC ? "/index.php?$query" : "/$query";
+        $query = $action ? http_build_query(array_merge(['action' => $action], $params)) : null;
+        $path = "/index.php" . ($query ? "?$query" : null);
         return $path;
     }
 
-    public function redirect($path): string
+    public function redirect($path): void
     {
         header("Location: $path");
     }
