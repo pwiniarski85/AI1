@@ -10,6 +10,8 @@ class Config
 
     protected static function init()
     {
+        global $config;
+
         $configFile = __DIR__
             . DIRECTORY_SEPARATOR . '..'
             . DIRECTORY_SEPARATOR . '..'

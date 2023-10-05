@@ -38,6 +38,10 @@ switch ($action) {
         $controller = new \App\Controller\PostController();
         $view = $controller->deleteAction($_REQUEST['id'], $router);
         break;
+    case 'info':
+        $controller = new \App\Controller\InfoController();
+        $view = $controller->infoAction();
+        break;
     default:
         $view = 'Not found';
         break;

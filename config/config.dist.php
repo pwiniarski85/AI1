@@ -1,5 +1,5 @@
 <?php
 $config = [];
-$config['db_dsn'] = 'mysql:dbname=customfram; host=127.0.0.1';
-$config['db_user'] = 'customfram';
-$config['db_pass'] = '12345678';
+$config['db_dsn'] = 'sqlite:/path/to/data.db';
+$config['db_user'] = '';
+$config['db_pass'] = '';
