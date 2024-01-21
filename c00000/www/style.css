@@ -1,0 +1,81 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to left, #ff758c, #ff7eb3);
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #000000;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    font-size: large;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.search-button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #75ffea;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: large;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background: #ff758c;
+    color: #ffffff;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blok-pogodowy {
+    padding: 15px;
+    border: 2px dashed #ffffff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.blok-pogodowy h2 {
+    margin: 0;
+    font-size: x-large;
+    color: #ff758c;
+}
+
+.blok-pogodowy div {
+    margin-top: 10px;
+}
+
+.pogoda-placeholder {
+    margin: 0;
+    font-size: x-large;
+    color: #ff758c;
+    padding: 15px;
+    border: 2px dashed #ffffff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
